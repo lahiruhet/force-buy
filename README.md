@@ -1,8 +1,13 @@
-# React + Vite
+# ForceBuy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website where you can get the latest information about competitve Valorant from schedule to team to events. VLRGG but strive to provide a better/simple UI and ease of use for the end-user.
 
-Currently, two official plugins are available:
+# Tech Stack
+* ReactJS
+* Styled-Component
+* NodeJS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Stil in the initial phase of development. you can run it by cloning the repository then,
+```bash
+yarn
+yarn dev
