@@ -26,6 +26,8 @@ export default function Matches() {
             teamOneName={match.team_one_name}
             teamTwoName={match.team_two_name}
             matchTime={match.match_time}
+            eventName={match.event_name}
+            eventIcon={match.event_icon_url}
           />
         ))}
       </Wrapper>
