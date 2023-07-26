@@ -5,7 +5,19 @@ import React from "react";
 
 export default function Matches() {
   const Container = styled.div``;
-  const Wrapper = styled.div``;
+  const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  `;
+  const Title = styled.h4`
+    color: #ffffff;
+  `;
+  const SingleCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  `;
 
   const [matches, setMatches] = React.useState([]);
 
@@ -20,16 +32,19 @@ export default function Matches() {
   return (
     <Container>
       <Wrapper>
-        {matches.map((match, index) => (
-          <MatchCard
-            key={index}
-            teamOneName={match.team_one_name}
-            teamTwoName={match.team_two_name}
-            matchTime={match.match_time}
-            eventName={match.event_name}
-            eventIcon={match.event_icon_url}
-          />
-        ))}
+        <Title>Upcoming Matches</Title>
+        <SingleCard>
+          {matches.map((match, index) => (
+            <MatchCard
+              key={index}
+              teamOneName={match.team_one_name}
+              teamTwoName={match.team_two_name}
+              matchTime={match.match_time}
+              eventName={match.event_name}
+              eventIcon={match.event_icon_url}
+            />
+          ))}
+        </SingleCard>
       </Wrapper>
     </Container>
   );
